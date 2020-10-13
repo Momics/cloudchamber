@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "dev": "parcel ./app/index.html",
+    "build": "run-p build:app build:server",
+    "build:server": "tsc -p ./src",
+    "build:app": "parcel build ./app/index.html -d ./dist/public"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.8",
+    "apollo-server-plugin-base": "^0.10.1",
+    "debug": "^4.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "typescript": "^4.0.3",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "@types/object-hash": "^1.3.3",
+    "@types/ws": "^7.2.7",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4"
+  },
+  "name": "cloudchamber",
+  "version": "1.0.1",
+  "main": "dist/app.js",
+  "author": {
+    "email": "momics.eu@gmail.com",
+    "name": "Willem Horsten",
+    "url": "https://github.com/Momics"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Momics/cloudchamber.git"
+  },
+  "license": "MIT"
+}
