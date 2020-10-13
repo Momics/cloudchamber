@@ -1,2 +1,4 @@
 # cloudchamber
-A dashboard that visualises graphql queries being done during development. It should give a better feel for what is happening in your API.
+It is a dashboard that visualises graphql requests. It can be used during development to better understand how your API and apps are behaving.
+
+It is an Apollo Server Plugin and uses Apollo's tracing functionality to function.
